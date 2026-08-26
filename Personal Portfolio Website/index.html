@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My-Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============ HEADER / NAVIGATION ============ -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="#home" class="logo">Ashif</a>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark and light mode">
+            <span class="toggle-thumb"></span>
+        </button>   
+
+        <button class="hamburger" aria-label="Toggel menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ============ HEADER / NAVIGATION ============ -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="greeting">Hello, I'm</p>
+        <h1 class="hero-name">Ashif Rza</h1>
+        <h2 class="hero-tittle">Web-Developer</h2>
+        <p class="hero-desc">
+          I build responsive, user-friendly websites and web applications.
+        </p>
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+      </div>
+      <div class="hero-image">
+        <img
+          src="/Personal Portfolio Website/assets/KAV_0423 (2).jpg"
+          class="profile-picture"
+          alt="ashif-profile-picture"
+        />
+      </div>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section id="about" class="about">
+      <div class="about-image">
+        <img
+          src="../Personal Portfolio Website/assets/silence vector jpg 2 NEW 2-2.jpg"
+          alt="ashif-sitting-potraits"/>
+      </div>
+      <div class="about-text">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">Who I am</h2>
+        <p class="about-desc">
+          I'm a front-end developer who loves building clean and efficient web
+          experiences. I enjoy turning ideas into real products.
+        </p>
+
+        <ul class="skills-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JAVASCRIPT</li>
+          <li>REACT</li>
+          <li>GIT</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS SECTION ============ -->
+    <section id="projects" class="projects">
+      <p class="section-label">My Projects</p>
+      <h2 class="section-tittle">Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="" alt="task-manager-application" />
+          <h3 class="project-tittle">Task Manager</h3>
+          <p class="project-desc">
+            A simple task management app built with React.
+          </p>
+          <a href="#" class="project-link">Live Demo &rarr;</a>
+        </article>
+
+        <article class="project-card">
+          <img src="" alt="ai-chatbox-application" />
+          <h3 class="project-tittle">AI-Chatbox</h3>
+          <p class="project-desc">
+            A simple task management app built with React.
+          </p>
+          <a href="#" class="project-link">Live Demo &rarr;</a>
+        </article>
+
+        <article class="project-card">
+          <img src="" alt="weather-application" />
+          <h3 class="project-tittle">Weather Applications</h3>
+          <p class="project-desc">
+            A simple task management app built with React.
+          </p>
+          <a href="#" class="project-link">Live Demo &rarr;</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section id="contact" class="contact">
+      <div class="contact-info">
+        <p class="section-label">Get In Touch</p>
+        <h2 class="section-tittle">Contact Me</h2>
+        <p class="contact-desc">
+          Have a project in mind or want to say hello? Fill out the form and
+          I'll get back to you.
+        </p>
+        <ul class="contact-details">
+          <li>
+            <span class="icon">&#9993;</span>
+            <a href="mailto:ashifrza47@gmail.com">ashifrza47@gmail.com</a>
+          </li>
+          <li>
+            <span class="icon">&#9742;</span>
+            <a href="tel:+9174661942412">+9174661942412</a>
+          </li>
+          <li>
+            <span class="icon">&#128205;</span>
+            <span>Bengaluru, India</span>
+          </li>
+        </ul>
+      </div>
+      <form action="#" method="post" class="contact-form">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+        </div>
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Your message"
+          required
+        ></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="footer-brand">
+        <p class="footer-logo">Ashif Rza</p>
+        <p class="footer-copy">
+          &copy; 2026 Ashif. All rights reserved.
+          <span>Made with &hearts;</span>
+        </p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
