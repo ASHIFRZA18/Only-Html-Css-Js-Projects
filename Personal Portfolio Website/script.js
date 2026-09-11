@@ -1,11 +1,7 @@
-// Grab a reference to the <html> element and the toggle button,
-// so we can read/change them below.
 const html = document.documentElement;
 const toggleBtn = document.getElementById('theme-toggle');
 
-// On page load: check if the visitor already picked a theme last time
-// (saved in localStorage, which survives even after closing the tab).
-// If not, fall back to 'dark' as the default.
+
 const savedTheme = localStorage.getItem('theme') || 'dark';
 html.setAttribute('data-theme', savedTheme);
 
