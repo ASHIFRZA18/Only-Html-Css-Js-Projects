@@ -50,9 +50,6 @@ allNavLinks.forEach((link) => {
 // Grab every <section> that has an id (home, about, projects, contact)
 const sections = document.querySelectorAll('section[id]');
 
-// An IntersectionObserver watches elements and tells us when they
-// enter or leave the visible viewport — far more efficient than
-// manually checking scroll position on every single scroll event.
 const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -88,13 +85,9 @@ sections.forEach((section) => {
 const contactForm = document.querySelector('.contact-form');
 
 contactForm.addEventListener('submit', (event) => {
-    // Stop the browser's default behavior, which would normally
-    // reload the page and send the data to the "action" URL.
-    // Since there's no backend yet, we handle it ourselves instead.
+
     event.preventDefault();
 
-    // Remove any leftover message from a previous submit, so they
-    // don't stack up if the person submits more than once.
     const existingMessage = contactForm.querySelector('.form-message');
     if (existingMessage) {
         existingMessage.remove();
